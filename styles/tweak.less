@@ -1,0 +1,212 @@
+
+/* General */
+
+// tweak: { "category" : "General", "title" : "Site Width", "type" : "value", "min" : 600, "max" : 1800, "step" : 10, "property" : "width", "target" : "#pageWrapper" }
+@contentWidth: 800px;
+
+// tweak: { "category" : "General", "title" : "Site Background", "type" : "color", "target" : "body"}
+@background: #fff;
+
+// tweak: { "category" : "General", "title" : "Site Background Image", "type" : "image", "target" : "body"}
+.bg-image{
+  background-image: none;
+  background-position: top left;
+  background-size: auto;
+  background-attachment: scroll;
+  background-repeat: repeat;
+}
+
+// tweak: { "category" : "General", "title" : "Site Alignment", "type" : "dropdown", "options" : [ "Left", "Center" ], "target" : "body" }
+
+// tweak: { "category" : "General", "title" : "Top Padding", "type" : "value", "min" : 0, "max" : 400, "step" : 5, "property" : "margin-top", "target" : "#canvasWrapper" }
+@topPadding: 30px;
+
+// tweak: { "category" : "General", "title" : "Outer Padding", "type" : "value", "min" : 0, "max" : 200, "step" : 5, "property" : ["padding-top","padding-right","padding-bottom","padding-left" ], "target" : "#canvasWrapper" }
+@outerPadding: 70px;
+
+
+/* Sidebar-style Header */
+
+// tweak: { "category" : "Sidebar Section", "title" : "Logo Image Size", "type" : "value", "min" : 10, "max" : 500, "property" : "height", "target" : "h1.logo.image", "showOnlyWhenPresent" : "h1.logo.image" }
+@logoSize: 80px;
+
+// tweak: { "category" : "Sidebar Section", "title" : "Site Title", "type" : "font",  "target" : "h1.logo.site-title", "showOnlyWhenPresent" : "h1.logo:not(.image)" }
+.site-title-font {
+  font-family: arial, sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.4em;
+  text-transform: normal;
+}
+
+// tweak: { "category" : "Sidebar Section", "title" : "Site Title Color", "label" : "Site Title / Mobile Nav Color", "type" : "color", "target" : "#header, h1.logo.site-title" }
+@siteTitleColor: #FFFFFF;
+
+// tweak: { "category" : "Sidebar Section", "title" : "Site Title Background", "label" : "Site Title / Mobile Nav Background", "type" : "color", "target" : "h1.logo.site-title" }
+@siteTitleBackground: #FF5256;
+
+// tweak: { "category" : "Sidebar Section", "title" : "Site Title Padding", "type" : "value", "min" : 0, "max" : 20, "property" : "padding", "target" : "#logo h1", "showOnlyWhenPresent" : "h1.logo:not(.image)" }
+@siteTitlePadding: 4px;
+
+// tweak: { "category" : "Sidebar Section", "title" : "Site Subtitle Color", "type" : "color", "target" : ".logo-subtitle" }
+@subtitleColor: #999;
+
+// tweak: { "category" : "Sidebar Section", "title" : "Site Subtitle", "type" : "font", "target" : ".logo-subtitle" }
+.site-subtitle-font {
+  font-family: "Helvetica", arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2em;
+  text-transform: normal;
+}
+
+// tweak: { "category" : "Sidebar Section", "title" : "Sidebar Width", "type" : "value", "min" : 100, "max" : 700, "step" : 5, "target" : "#header", "property" : "width" }
+@sidebarWidth: 180px;
+
+// tweak: { "category" : "Sidebar Section", "title" : "Sidebar Padding", "type" : "value", "min" : 0, "max" : 150, "step" : 5, "target" : "#header", "property" : "margin-right" }
+@sidebarPadding: 25px;
+
+// tweak: { "category" : "Sidebar Section", "title" : "Header Position", "type" : "dropdown", "options" : [ "Fixed Left", "Right", "Left" ], "target" : "#header" }
+
+// tweak: { "category" : "Sidebar Section", "title" : "Vertical Alignment", "type" : "dropdown", "options" : [ "Align with Navigation", "Align with Logo" ],  "target" : "#header" }
+
+
+/* Navigation */
+
+// tweak: { "category" : "Site Navigation", "title" : "Main Navigation", "type" : "font",  "target" : "#mainNavigation .main-nav > ul > li" }
+.nav-font {
+  font-family: "Helvetica", arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.6em;
+  text-transform: normal;
+}
+
+// tweak: { "category" : "Site Navigation", "title" : "Navigation Color", "type" : "color", "target" : "#mainNavigation .main-nav > ul > li" }
+@navColor: #222;
+
+// tweak: { "category" : "Site Navigation", "title" : "Navigation Color (Active)", "type" : "color", "target" : "#mainNavigation .main-nav > ul > li, #secondaryNavigation .main-nav > ul > li" }
+@navActiveColor: #FF5256;
+
+// tweak: { "category" : "Site Navigation", "title" : "Navigation (Hover) Color", "type" : "color", "target" : "#mainNavigation .main-nav > ul > li, #secondaryNavigation .main-nav > ul > li" }
+@navHoverColor: #000;
+
+// tweak: { "category" : "Site Navigation", "title" : "Secondary Navigation", "type" : "font",  "target" : "#secondaryNavigation .main-nav > ul > li" }
+.secondary-nav-font {
+  font-family: "Helvetica", arial, sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.6em;
+  text-transform: normal;
+}
+
+// tweak: { "category" : "Site Navigation", "title" : "Secondary Navigation Color", "type" : "color", "target" : "#secondaryNavigation .main-nav > ul > li" }
+@secondaryNavColor: #999;
+
+// tweak: { "category" : "Site Navigation", "title" : "Hide Social Icons", "type" : "checkbox", "default" : "false", "target" : ".social-links" }
+
+// tweak: { "category" : "Site Navigation", "title" : "Social Icon Color", "type" : "color", "target" : ".social-links", "showOnlyWhenPresent" : "body:not(.hide-social-icons)" }
+@socialIconColor:#222;
+
+// tweak: { "category" : "Site Navigation", "title" : "Social Icon Style", "type" : "dropdown", "options" :[ "Normal", "Round", "Square" ], "default" : "Normal", "target" : ".social-links", "showOnlyWhenPresent" : "body:not(.hide-social-icons)" }
+
+// tweak: { "category" : "Site Navigation", "title" : "Social Icon Size", "type" : "value", "min" :16, "max" :48, "target" : ".social-links" }
+@socialIconSize: 16px;
+
+// tweak: { "category" : "Site Navigation", "title" : "Navigation Spacing", "type" : "value", "min" : 0, "max" : 150, "step" : 5, "target" : "#logo h1", "property" : "margin-bottom" }
+@innerPadding: 25px;
+
+
+/* Main Content */
+
+// tweak: { "category" : "Main Content", "title" : "Gallery Controls Text", "type" : "color", "target" : "#galleryWrapper, .gallery-controls", "showOnlyWhenPresent" : "#galleryWrapper" }
+@galleryControls: #aaa;
+
+// tweak: { "category" : "Main Content", "title" : "Gallery Control Style", "type" : "dropdown", "options" : [ "Icons", "Text" ], "target" : ".gallery-controls", "showOnlyWhenPresent" : "#galleryWrapper" }
+
+// tweak: { "category" : "Main Content", "title" : "Gallery Icons", "type" : "dropdown", "options" : [ "Dark", "Light" ], "target" : ".gallery-controls", "showOnlyWhenPresent" : "#galleryWrapper" }
+
+// tweak: { "category" : "Main Content", "title" : "Gallery View", "type" : "dropdown", "options" : [ "Start on Slideshow", "Start on Grid" ], "target" : "#galleryWrapper",   "showOnlyWhenPresent" : "#galleryWrapper" }
+
+// tweak: { "category" : "Main Content", "title" : "Gallery Height", "type" : "dropdown", "options" : [ "Fixed", "Adaptive" ], "target" : "#galleryWrapper",   "showOnlyWhenPresent" : "#galleryWrapper" }
+
+// tweak: { "category" : "Main Content", "title" : "Gallery Height (Max)", "type" : "value", "min" : "0", "max" : "1000", "step" : "5", "property" : "height", js: "true", "target" : "#slideshowWrapper", "showOnlyWhenPresent" : "#galleryWrapper" }
+@galleryHeightMax: 600px;
+
+// tweak: { "category" : "Main Content", "title" : "Headings Font", "type" : "font", "target" : "h1:not(.logo), #mainContent h2, #mainContent h3", "loadAllVariants" : "true" }
+.titles-font {
+  font-family: "Helvetica", arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.4em;
+  text-transform: normal;
+}
+@titles-font-font-size: 18px;
+
+// tweak: { "category" : "Main Content", "title" : "Headings Color", "type" : "color", "target" : "h1:not(.logo), #mainContent h2, #mainContent h3"}
+@titleColor: #222;
+
+// tweak: { "category" : "Main Content", "title" : "Blog Meta Data Color", "type" : "color", "target" : ".hentry, .meta" }
+@blogMetaColor: #aaa;
+
+// tweak: { "category" : "Main Content", "title" : "Show Authors", "type" : "checkbox",  "target" : ".meta", "default" : false, showOnlyWhenPresent: '.collection-type-blog' }
+
+// tweak: { "category" : "Main Content", "title" : "Text", "type" : "font", "target" : "body, #mainContent", "loadAllVariants" : "true" }
+.body-font {
+  font-family: "Helvetica", arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.6em;
+}
+
+// tweak: { "category" : "Main Content", "title" : "Text Color", "type" : "color", "target" : "body, #mainContent"}
+@bodyColor: #444;
+
+// tweak: { "category" : "Main Content", "title" : "Body Link Color", "type" : "color", "target" : "body, #mainContent"}
+@linkColor: #FF5256;
+
+// tweak: { "category" : "Main Content", "title" : "Body Link (Hover) Color", "type" : "color", "target" : "body, #mainContent"}
+@linkHoverColor: #FF5256;
+
+// tweak: { "category" : "Main Content", "title" : "Quote", "type" : "font", "target" : "blockquote" }
+.quote-font {
+  font-family: "Helvetica", arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 1.6em;
+}
+
+// tweak: { "category" : "Main Content", "title" : "Share Button Color", "type" : "color", "target" : ".ss-social-button-wrapper" }
+@shareButtonColor: #333;
+
+// tweak: { "category" : "Main Content", "title" : "Blog Sidebar", "type" : "dropdown", "options" : [ "Hide", "Left", "Right" ], "target" : ".hentry" }
+
+// tweak: { "category" : "Main Content", "title" : "Blog Sidebar Width", "type" : "value", "min" : 50, "max" : 700, "step" : 5, "property" : "width", condition: { "Blog Sidebar": ["Left", "Right"] }, "target" : "#sidebarWrapper" }
+@blogSidebarWidth: 180px;
+
+// tweak: { "category" : "Main Content", "title" : "Blog Sidebar Padding", "type" : "value", "min" : "0", "max" : "150", "step" : "5", "property" : "margin-right", "showOnlyWhenPresent" : ".blog-sidebar-left, .blog-sidebar-right", "target" : "#sidebarWrapper" }
+@blogSidebarPadding: 50px;
+
+// tweak: { "category" : "Main Content", "title" : "Blog Post Spacing", "type" : "value", "min" : 0, "max" : 200, "property" : "margin-bottom", "target" : ".hentry" }
+@postPadding: 100px;
+
+// tweak: { "category" : "Main Content", "title" : "Canvas Background", "type" : "color", "target" : "#canvasWrapper" }
+@canvasBackground: #fff;
+
+
+/* Products */
+
+// tweak: { "category" : "Products", "type" : "checkbox", "title" : "Show Products Category Navigation", "label" : "Show Category Navigation", "target" : ".collection-type-products #categoryNav", "showOnlyWhenPresent" : ".collection-type-products", "active" : "false" }
+
+
+/* Footer */
+
+/* tweak: { "category" : "Footer Section", "title" : "Footer Style", "type" : "dropdown", "options" : [ "Normal", "Fixed to Bottom" ], "target" : "#footerWrapper" } */
+

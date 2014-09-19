@@ -1,0 +1,42 @@
+<div id="galleryWrapper">
+
+  <div style="height: 0px; overflow: hidden; color: transparent;">......................................................................................................................................................................................................................</div>
+
+  <div id="slideshowWrapper">
+    <div id="slideshow" class="slideshow">
+    	{.repeated section items}
+    		<div class="slide" data-slide-id="{id}" data-alignment="top left" data-slide-url="{urlId}" data-item-id="{id}">
+          {.image?}<img data-load="false" {@|image-meta} />{.end}
+          {.video?}{@|video}{.end}
+          <div class="imageMeta">
+            {.section title}<h2 class="image-title"><strong>{@}</strong></h2>{.end}
+            {.section body}<span class="image-desc">{@}</span>{.end}
+          </div>
+        </div>
+    	{.end}
+    </div>
+  </div>
+
+  <div class="gallery-controls">
+    <span class="arrow-icon prev-slide">prev</span><span class="spacer"> / </span><span class="arrow-icon next-slide">next</span> <span class="slide-count"><span class="current-index"></span> of <span class="total-slides"></span></span> <span id="gridButton" class="grid-icon">thumbnails</span>
+  </div>
+
+  <div id="imageData">
+    {.repeated section items}
+    <div class="slide">
+      {.section title}<h2 class="image-title"><strong>{@}</strong></h2>{.end}
+      {.section body}<span class="image-desc">{@}</span>{.end}
+    </div>
+    {.end}
+  </div>
+
+</div>
+
+<div id="thumbnails" class="thumb-list">
+	{.repeated section items}
+    <div class="thumb content-fit">
+  		<img {@|image-meta} />
+    </div>
+	{.end}
+</div>
+

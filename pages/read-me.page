@@ -1,0 +1,74 @@
+
+<!-- === INLINE CSS === -->
+<!-- LESSCSS IS NOT WELCOME IN HERE -->
+
+<style type="text/css">
+
+  @import '/universal/template-read-me/read-me.css';
+
+  img[data-src]{
+    border: 1px solid #ddd;
+  }
+
+</style>
+
+
+<!-- === HTML === -->
+
+<section id="read-me-page">
+
+  <section class="rm-intro">
+    <h1>Atelier is a simple template that holds galleries, blogs, and other pages easily.</h1>
+  </section>
+
+  <section class="rm-full-image">
+      <h2>Page Alignment Options</h2>
+      <p>Pages in Atelier can be aligned to the left or center of the page.</p>
+      <select class="simulate-tweak">
+        <option>Left aligned</option>
+        <option>Center aligned</option>
+      </select>
+    <div>
+      <img data-src="/assets/left.jpg" data-option-2="/assets/center.jpg"/>
+    </div>
+  </section>
+
+<!--   <section class="rm-image-text">
+    <div class="thumbnail">
+      <div class="content-padding">
+        <img data-src="/assets/grid.jpg" />
+      </div>
+    </div>
+    <div class="text">
+      <h2>Gallery Display Options</h2>
+      <p>
+        When galleries are first displayed, they can appear as a grid of thumbnails or as a slideshow. This preference can be adjusted in the Style Editor.
+      </p>
+    </div>
+  </section> -->
+
+      <section class="rm-full-image">
+      <h2>Blog Alignment Options</h2>
+      <p>The blog page for Atelier can be customized to have a sidebar on the left, right, or none at all.</p>
+      <select class="simulate-tweak">
+        <option>Left Sidebar</option>
+        <option>Right Sidebar</option>
+        <option>No Sidebar</option>
+      </select>
+    <div>
+      <img data-src="/assets/blog-left.jpg" data-option-2="/assets/blog-right.jpg" data-option-3="/assets/blog-hidden.jpg"/>
+    </div>
+  </section>
+
+    <section>
+    <h2>Multiple Navigation Sections</h2>
+    <p>Atelier has the flexibility to create a hierarchy in the sidebar. To organize and emphasize projects from other pages, the template features two navigations: <strong>Main Navigation and Secondary Navigation</strong>. Gallery pages can be placed under the main navigation so that each collection of work has its own link in the ​navigation. Other pages such as the blog or contact page can be placed in the secondary navigation.</p>
+  </section>
+
+</section>
+
+
+
+<!-- === JAVASCRIPT === -->
+
+<script src="/universal/template-read-me/read-me.js"></script>
